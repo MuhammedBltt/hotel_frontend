@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.hero {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 10px;
+  width: 80%;
+}
+.activision-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.search-form input,
+.search-form select {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-form button:hover {
+  background-color: #e65500;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.header-buttons button {
+  padding: 8px 15px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.header-buttons .login-btn:hover {
+  background-color: #003366;
+}
+
+.header-buttons .signup-btn:hover {
+  background-color: #002244;
+}
+
+/* Popüler Oteller Bölümü */
+.featured-hotels {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.featured-hotels h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.hotel-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hotel-card {
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.hotel-card:hover {
+  transform: translateY(-10px);
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.hotel-info {
+  padding: 15px;
+}
+
+.hotel-info h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.hotel-info p {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.price {
+  display: block;
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.book-btn {
+  padding: 10px 15px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #e65500;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+}
